@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_view, name="home"),
     path('api/', UserApi.as_view()),
-    path('posts/', imgView.as_view(), name= 'receipts_list'),
+    path('imgr/', imgView.as_view(), name= 'receipts_list'),
 ]

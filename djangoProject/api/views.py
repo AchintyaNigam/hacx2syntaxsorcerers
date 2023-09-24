@@ -97,6 +97,7 @@ class imgView(APIView):
                 'id': new_image_id,  # Include the ID here
                 'msg': 'Image data Created'
             }
+
             return Response(img_serializer.data, status=status.HTTP_201_CREATED)
         else:
             print('error', img_serializer.errors)
